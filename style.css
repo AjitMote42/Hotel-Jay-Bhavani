@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #121212;
+    color: white;
+}
+.navbarcontainer{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px;
+  
+   
+}
+.lgdevicenav{
+    display: block;
+    padding: 0 50px;
+}
+.navbar-1{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    border-radius: 0px;
+    background: #12121261;
+    box-shadow:  35px 10px 68px #5a5a5a, -35px -35px 0px #ffffff;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+.navbar-1 nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+    align-items: center ;
+
+}
+.navbar-1 nav ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: orange;
+}
+.navformdDevice{
+    position: absolute;
+    height: 80vh;
+    width: 40vw;
+    border: 2px red solid;
+    z-index: 10;
+    right: 0;
+    display: none;
+}
+.crousleSilde{
+    max-height: 100vh !important;
+    overflow: hidden;
+    
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.carousel-item  {
+object-fit: contain;
+}
+.aboutnameheading{
+    display: flex;
+    text-align: center;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.aboutcontainer{
+    position: relative;
+    width: 350px;
+}
+.aboutcontainer h4{
+color: aqua;
+}
+.aboutnameheading h1::after{
+    content: '';
+    background: linear-gradient(45deg, red,orange);
+    height: 4px;
+    width: 112px;
+    position: absolute;
+    left: 121px;
+    border-radius: 40px;
+    bottom: -10px;
+    
+}
+.footer{
+    padding: 0 28px;
+}
+.footerpart{
+    margin-top: 120px;
+    display: flex;
+
+   
+}
+.cardQ{
+    
+    position: relative;
+    margin-bottom: 25px;
+}
+.cardQ a{
+    color:white;
+   text-decoration: none;
+}.cardQ a::after{
+    content: '';
+    background: linear-gradient(45deg, red,orange);
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    top: 40px;
+    left: 18px;
+    border-radius: 50px;
+}
+.address{
+    margin-top: 10px;   
+    display: flex;
+    flex-direction: column;
+    line-height: 6px;
+    word-break: break-all;
+    justify-content: center;
+}
+
+.frenchise{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  justify-content: center;
+}
+.frenchise div span:nth-child(1){
+    color: gray;
+    font-weight: bold;
+
+}
+.invert{
+    filter: invert(1);
+}
+@media (max-width: 1250px) {
+   .navbar-1 nav ul li a{
+    font-size: 11px;
+   }
+
+   .aboutnameheading{
+    margin-top: 0;
+   }
+  }
+  @media (max-width: 900px){
+    .brandname img{
+        width: 40vw !important;
+        
+        object-fit: contain;
+    }
+   .navformdDevice{
+    position: absolute;
+    display: block;
+    width: 50vw;
+    background: #121212;
+   }
+   .navformdDevice a,ul{
+    font-size: 15px;
+    text-decoration: none;
+    color: orange;
+    list-style: none;
+   }
+    .lgdevicenav{
+        display: none;
+    }
+    .hamburger{
+        position: absolute;
+        right: 28px;
+        top: 14px;
+        display: block;
+        z-index: 10;
+        filter: invert(1);
+        color: white;
+    }
+  }
