@@ -278,10 +278,8 @@ text-shadow: 0 0 0px #fff, 0 0 0px #ffcf00, 0 0 0px #ffcf00, 0 0 0px #ffcf00, 0 
 }
 
 @media (max-width: 900px) {
-    .brandname img {
-        width: 50vw !important;
-
-        object-fit: contain;
+  .brandname h1{
+        font-size: 7vw;
     }
 
     .navformdDevice {
