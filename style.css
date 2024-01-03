@@ -1,71 +1,98 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+html {
+    scroll-behavior: smooth;
+  }
+body {
     background: #121212;
     color: white;
+    user-select: none;
 }
-.navbarcontainer{
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 0px;
-  
-   
-}
-.lgdevicenav{
-    display: block;
-    padding: 0 50px;
-}
-.navbar-1{
+
+
+.navbar-1 {
     display: flex;
     justify-content: space-between;
-    height: 60px;
+    height: 80px;
     width: 100%;
-    border-radius: 0px;
-    background: #12121261;
-    box-shadow:  35px 10px 68px #5a5a5a, -35px -35px 0px #ffffff;
+    background: #121212c1;
     align-items: center;
     position: fixed;
     z-index: 10;
     top: 0;
+    color: white;
+    overflow: hidden;
+    padding: 30px;
 }
-.navbar-1 nav ul{
+
+.navbar-1 nav ul {
     display: flex;
     justify-content: space-around;
     gap: 20px;
     list-style: none;
-    align-items: center ;
+    align-items: center;
 
 }
-.navbar-1 nav ul li a{
+
+.brandname {
+   padding: 0px 20px
+}
+.brandname h1{
+-webkit-text-stroke: 1px #ffcf00;
+color: transparent;
+letter-spacing: 2px;
+word-spacing: 4px;
+font-size: 3em;
+cursor: pointer;
+font-weight: bold;
+color: #333;
+text-shadow: 0 0 0px #fff, 0 0 0px #ffcf00, 0 0 0px #ffcf00, 0 0 0px #ffcf00, 0 0 0px #ffcf00, 0 0 10px #ffcf00, 0 0 #ffc14d;
+
+}
+
+.lgdevicenav ul li a {
     font-size: 25px;
     text-decoration: none;
-    color: orange;
+    color: #ffcf00;
+    font-weight: bold;
+    padding: 5px;
+    transition: all 1s;
+    border-radius: 7px;
 }
-.navformdDevice{
+
+.lgdevicenav ul li a:hover {
+    border: 1px solid white;
+    border-radius: 7px;
+}
+  
+.navformdDevice {
     position: absolute;
     height: 80vh;
     width: 40vw;
-    border: 2px red solid;
+    border-radius: 20px 0 0 20px;
     z-index: 10;
     right: 0;
     display: none;
 }
-.crousleSilde{
+
+.crousleSilde {
     max-height: 100vh !important;
     overflow: hidden;
-    
+
 }
-.hamburger{
+
+.hamburger {
     display: none;
     cursor: pointer;
 }
-.carousel-item  {
-object-fit: contain;
+
+.carousel-item {
+    object-fit: contain;
 }
-.aboutnameheading{
+
+.aboutnameheading {
     display: flex;
     text-align: center;
     height: 20vh;
@@ -74,44 +101,143 @@ object-fit: contain;
     flex-direction: column;
     margin-top: 20px;
 }
-.aboutcontainer{
+
+.aboutcontainer {
+    width: 90vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.aboutcontainer h4 {
+    color: aqua;
+}
+.aboutcontainer h1 {
     position: relative;
-    width: 350px;
+  word-spacing: 10px;
 }
-.aboutcontainer h4{
-color: aqua;
-}
-.aboutnameheading h1::after{
+.aboutnameheading h1::after {
     content: '';
-    background: linear-gradient(45deg, red,orange);
+    background: linear-gradient(45deg, red, orange);
     height: 4px;
     width: 112px;
     position: absolute;
     left: 121px;
     border-radius: 40px;
     bottom: -10px;
-    
-}
-.footer{
-    padding: 0 28px;
-}
-.footerpart{
-    margin-top: 120px;
-    display: flex;
 
-   
 }
-.cardQ{
+.specialfood {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 53px;
+}
+.fooddishes {
+    padding: 20px 13px;
+    color: black;
+}
+
+.cardcontainer {
+    padding: 0 10px;
+    background: white;
+}
+.dishheading {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+.dishheading .line {
+    width: 200px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.objectfit{
+    object-fit: contain;
     
+}
+.line h3::after {
+    content: '';
+    background: linear-gradient(45deg, red, orange);
+    height: 4px;
+    width: 100px;
+    position: absolute;
+    left: 45px;
+    border-radius: 40px;
+    bottom: -10px;
+
+}
+.R-chivda h1{
+    text-align: center;
+    line-height: 50px;
+}
+.R-chivda h1::first-letter{
+    color: orange;
+    font-weight: bold;
+}
+.cards{
+    display: flex;
+    gap: 10px;
+   object-fit: cover;
+   justify-content: center;
+   padding: 10px;
+   position: relative;
+}
+.card{
+    
+    overflow: hidden;
+}
+.card img{
+    transition: all 1s;
+    
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.ribbon {
+    width: 40px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -0px;
+    top: 2px;
+    z-index: 10;
+    text-align: center;
+    border-radius: 50%;
+    transform: rotate(20deg);
+    background-color: #d51e0d;
+    color: white;
+  }
+.card-body{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.795);
+}
+.footer {
+    padding: 0 28px;
+    margin-bottom: 30px;
+}
+.footerpart {
+        margin-top: 74px;
+        padding: 40px 0;
+        display: flex;
+}
+.cardQ {
     position: relative;
     margin-bottom: 25px;
 }
-.cardQ a{
-    color:white;
-   text-decoration: none;
-}.cardQ a::after{
+.cardQ a {
+    color: white;
+    text-decoration: none;
+}
+.cardQ a::after {
     content: '';
-    background: linear-gradient(45deg, red,orange);
+    background: linear-gradient(45deg, red, orange);
     position: absolute;
     height: 4px;
     width: 50px;
@@ -119,62 +245,68 @@ color: aqua;
     left: 18px;
     border-radius: 50px;
 }
-.address{
-    margin-top: 10px;   
+.address {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     line-height: 6px;
     word-break: break-all;
     justify-content: center;
 }
-
-.frenchise{
+.frenchise {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-top: 20px;
-  justify-content: center;
+    justify-content: center;
 }
-.frenchise div span:nth-child(1){
+.frenchise div span:nth-child(1) {
     color: gray;
     font-weight: bold;
-
 }
-.invert{
+.invert {
     filter: invert(1);
 }
 @media (max-width: 1250px) {
-   .navbar-1 nav ul li a{
-    font-size: 11px;
-   }
+    .navbar-1 nav ul li a {
+        font-size: 11px;
+    }
 
-   .aboutnameheading{
-    margin-top: 0;
-   }
-  }
-  @media (max-width: 900px){
-    .brandname img{
-        width: 40vw !important;
-        
+    .aboutnameheading {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .brandname img {
+        width: 50vw !important;
+
         object-fit: contain;
     }
-   .navformdDevice{
-    position: absolute;
-    display: block;
-    width: 50vw;
-    background: #121212;
-   }
-   .navformdDevice a,ul{
-    font-size: 15px;
-    text-decoration: none;
-    color: orange;
-    list-style: none;
-   }
-    .lgdevicenav{
+
+    .navformdDevice {
+        position: fixed;
+        padding: 20px;
+        width: 50vw;
+        background: #121212;
+    }
+
+    .navformdDevice a,
+    ul {
+        font-size: 15px;
+        text-decoration: none;
+        color: #ffcf00;
+        font-weight: bold;
+        line-height: 50px;
+        list-style: none;
+    }
+
+    .lgdevicenav {
         display: none;
     }
-    .hamburger{
-        position: absolute;
+
+    .hamburger {
+        position: fixed;
         right: 28px;
         top: 14px;
         display: block;
@@ -182,4 +314,4 @@ color: aqua;
         filter: invert(1);
         color: white;
     }
-  }
+}
