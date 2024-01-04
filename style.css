@@ -98,8 +98,8 @@ body {
 
 .qute {
     position: fixed;
-    overflow: hidden;
-    color: black;
+    overflow-y: auto;
+    color: white;
     left: 20vw;
     top: 20vh;
     width: 50vw;
@@ -450,6 +450,7 @@ ul {
     .qute {
         position: fixed;
         height: 40vh;
+        overflow-y: auto;
         width: 80vw;
         left: 10vw;
         top: 20vh;
