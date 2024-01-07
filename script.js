@@ -13,6 +13,7 @@ document.querySelectorAll(".qutetoggle").forEach(e => {
         let a = document.querySelector(".qute").style;
         if (a.display === "none") {
             a.display = "block"
+            document.querySelector(".navformdDevice").style.display = "none"
         }
         else if (a.display = "block") {
             a.display = "none"

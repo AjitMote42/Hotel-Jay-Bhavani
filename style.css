@@ -61,6 +61,7 @@ body {
     color: white;
     overflow: hidden;
     padding: 30px;
+   
 
 }
 
@@ -106,6 +107,7 @@ body {
     height: 50vh;
     border-radius: 10px;
     display: none;
+    z-index: 10;
     /* display: ; */
 }
 
@@ -160,7 +162,7 @@ ul {
 
 .navformdDevice {
     border-radius: 20px 0 0 20px;
-    z-index: 10;
+    z-index: 6;
     right: 0;
     display: none;
     position: fixed;

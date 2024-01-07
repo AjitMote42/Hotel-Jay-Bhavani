@@ -1,0 +1,30 @@
+.navbar-1{
+    animation: navbarload .5s ease-in .3s; /* duration, delay  */
+}
+
+@keyframes navbarload {
+    0%{
+
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.brandname,.lgdevicenav li{
+animation: navlinkandBrandnameAnimation .6s ease-in .3s;
+}
+
+@keyframes navlinkandBrandnameAnimation {
+    0%{
+        transform: scale(0);
+    }
+90%{
+    transform: scale(1.1);
+}
+    100%{
+
+        transform: scale(1);
+    }
+}
