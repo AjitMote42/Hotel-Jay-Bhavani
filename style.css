@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-html {
+html,body {
     scroll-behavior: smooth;
 }
 
@@ -76,7 +76,7 @@ body {
 
 .brandname {
     padding: 5px 20px;
-
+    transition: all .6s;
 }
 
 
@@ -163,15 +163,19 @@ ul {
 .navformdDevice {
     border-radius: 20px 0 0 20px;
     z-index: 6;
-    right: 0;
-    display: none;
+    right: -100%;
+    /* display: none; */
     position: fixed;
     padding: 20px;
     width: 50vw;
     background: #121212;
     text-align: center;
 }
-
+.navformdDevice img{
+    position: absolute;
+   right: 20px;
+   top: 10px;
+}
 .crousleSilde {
     max-height: 100vh !important;
     overflow: hidden;
@@ -344,14 +348,17 @@ ul {
 
 .footer {
     padding: 0 28px;
+    max-height: 65vh;
+    overflow-y: hidden;
     margin-bottom: 30px;
 }
 
 .footerpart {
     margin-top: 74px;
-    padding: 40px 0;
+   padding-top: 40px;
     display: flex;
     border-radius: 10px;
+    justify-content: center;
 }
 
 .cardQ {
@@ -420,8 +427,10 @@ ul {
         position: fixed;
         padding: 20px;
         width: 70vw;
+        right: -100%;
         background: #121212;
         z-index: 10;
+        transition: all .5s ;
     }
 
     .navformdDevice a,
@@ -448,6 +457,7 @@ ul {
         background: rgb(21, 20, 20);
      
     }
+    
 
     .qute {
         position: fixed;
@@ -477,5 +487,14 @@ ul {
     }
     .card{
         width: 100vw !important;
+    }
+    .specialfood{
+        padding: 20PX 30PX ;
+    }
+    .footer{
+       max-height: 100%;
+    }
+    .footerpart img{
+     height: 100%;
     }
 }
