@@ -1,18 +1,26 @@
 
-document.querySelector(".hamburger").addEventListener("click", () => {
-    document.querySelector(".navformdDevice").style.right = "0"
+document.querySelector(".hamburger").addEventListener("click", (e) => {
+  document.querySelector(".navformdDevice").style.right = "0"
+
 })
+
+
 document.querySelector(".closebtn").addEventListener("click", () => {
     document.querySelector(".navformdDevice").style.right = "-100%"
 })
 
-document.querySelectorAll(".qutetoggle").forEach(e => {
-    
+// add event listenr for close the query tab
+document.querySelector(".qute img").addEventListener("click", (e) => {
+  document.querySelector(".qute").style.display = "none"
+});
+
+//add event listner
+document.querySelectorAll(".qutetoggle").forEach((e) => {
     e.addEventListener("click", () => {
         let a = document.querySelector(".qute").style;
         if (a.display === "none") {
             a.display = "block"
-            document.querySelector(".navformdDevice").style.display = "none"
+            document.querySelector(".navformdDevice").style.right = "-100%"
         }
         else if (a.display = "block") {
             a.display = "none"
@@ -21,10 +29,6 @@ document.querySelectorAll(".qutetoggle").forEach(e => {
 })
 
 
-// add event listenr for close the query tab
-document.querySelector(".qute img").addEventListener("click", () => {
-    document.querySelector(".qute").style.display = "none"
-});
 
 //add event listner for to form validation
 let emaill = document.getElementById("Email1")
